@@ -18,13 +18,6 @@ module.exports = {
     "indent": ["error", 2, { "SwitchCase": 1 }],
     "jsx-quotes": ["warn", "prefer-double"],
     "semi": ["error", "always"],
-    "no-console": "off",
-    "no-await-in-loop": "off",
-    "space-before-function-paren": ["error", {
-      "anonymous": "always",
-      "named": "never",
-      "asyncArrow": "always"
-    }],
     "curly": ["error", "all"],
     "object-curly-newline": ["error", {"multiline": true, "minProperties": 4}]
   }

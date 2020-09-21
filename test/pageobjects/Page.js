@@ -8,6 +8,7 @@ module.exports = {
      *
      */
   open10CloudsHomePage: function () {
+    console.log("Opening 10Clouds homepage");
     browser.url(strings.url);
   },
 
@@ -17,9 +18,9 @@ module.exports = {
      * @param {number} timeout number of miliseconds that the function will wait for the element to be displayed
      * 
      */
-  selectElementWithWait: function (element, timeout = 5000) {
-    element.waitForDisplayed(timeout);
-    element.click();
+  selectElementWithWait: function (elementSelector, timeout = 5000) {
+    $(elementSelector).waitForDisplayed(timeout);
+    $(elementSelector).click();
   },
 
   /**
@@ -28,7 +29,8 @@ module.exports = {
     * 
     */
   searchForJobPosition: function (jobTitle) {
-    this.selectElementWithWait($(selectors.searchJobsInput));
+    console.log(`Searching for job positions containing: "${jobTitle}"`);
+    this.selectElementWithWait(selectors.searchJobsInput);
     $(selectors.searchJobsInput).setValue(jobTitle);
   },
 
@@ -37,8 +39,9 @@ module.exports = {
     * 
     */
   goToOpenJobPositions: function () {
-    this.selectElementWithWait($(selectors.careersTab));
-    this.selectElementWithWait($(selectors.seeOpenPositionsButton));
+    console.log('Opening Careers tab and selecting "See open posiitonss button"');
+    this.selectElementWithWait(selectors.careersTab);
+    this.selectElementWithWait(selectors.seeOpenPositionsButton);
   }
 
 };
