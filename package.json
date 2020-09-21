@@ -5,8 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "wdio wdio.conf.js",
-    "eslint": "eslint --fix ./test --ext .js",
-
     "test-suite": "wdio wdio.conf.js --suite"
   },
   "keywords": [],
