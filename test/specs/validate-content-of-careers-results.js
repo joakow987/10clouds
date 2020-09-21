@@ -10,9 +10,9 @@ describe('Opening Careers tab in 10Clouds page and typing Automation in search b
         Page.goToOpenJobPositions();
         Page.searchForJobPosition(strings.automation);
 
-        const jobTitlesArray = $$(selectors.jobOfferTitle);
-        for (let i = 0; i < jobTitlesArray.length; i++) {
-            expect(jobTitlesArray[i].getText()).toContain(strings.automation)
+        const arrayOfJobTitlesDisplayed = $$(selectors.jobOfferTitle);
+        for (let i = 0; i < arrayOfJobTitlesDisplayed.length; i++) {
+            expect(arrayOfJobTitlesDisplayed[i].getText()).toContain(strings.automation)
         }
 
     });

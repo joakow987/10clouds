@@ -11,8 +11,8 @@ describe('Opening Careers tab in 10Clouds page', () => {
         Page.goToOpenJobPositions();
         Page.searchForJobPosition(strings.qaEngineer);
 
-        const number = $(selectors.openPositions).$$('a').length;
-        expect(number).toEqual(1);
+        const numberOfJobPositionsDisplayed = $(selectors.openPositions).$$('a').length;
+        expect(numberOfJobPositionsDisplayed).toEqual(1);
 
     });
 });
