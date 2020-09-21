@@ -1,6 +1,8 @@
 const selectors = require('../constants/selectors.js');
 const strings = require('../constants/strings.js');
 
+const { url } = strings;
+const { searchJobsInput, careersTab, seeOpenPositionsButton } = selectors;
 module.exports = {
 
   /**
@@ -9,7 +11,7 @@ module.exports = {
      */
   open10CloudsHomePage: function () {
     console.log("Opening 10Clouds homepage");
-    browser.url(strings.url);
+    browser.url(url);
   },
 
   /**
@@ -30,8 +32,8 @@ module.exports = {
     */
   searchForJobPosition: function (jobTitle) {
     console.log(`Searching for job positions containing: "${jobTitle}"`);
-    this.selectElementWithWait(selectors.searchJobsInput);
-    $(selectors.searchJobsInput).setValue(jobTitle);
+    this.selectElementWithWait(searchJobsInput);
+    $(searchJobsInput).setValue(jobTitle);
   },
 
   /**
@@ -40,8 +42,8 @@ module.exports = {
     */
   goToOpenJobPositions: function () {
     console.log('Opening Careers tab and selecting "See open posiitonss button"');
-    this.selectElementWithWait(selectors.careersTab);
-    this.selectElementWithWait(selectors.seeOpenPositionsButton);
+    this.selectElementWithWait(careersTab);
+    this.selectElementWithWait(seeOpenPositionsButton);
   }
 
 };

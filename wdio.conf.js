@@ -21,7 +21,7 @@ exports.config = {
     './test/specs/validate-content-of-careers-results.js'
   ],
   suites: {
-    careersPage: [
+    careersPageSuite: [
       './test/specs/validate_numbers_of_careers_results.js',
       './test/specs/validate-content-of-careers-results.js'
     ]

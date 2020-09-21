@@ -6,13 +6,15 @@ const Page = require('../pageObjects/Page.js');
 describe('Opening Careers tab in 10Clouds page', () => {
 
   it('should validate that there is exactly 1 QA Automation Engineer role open', () => {
-
+    const { qaEngineer } = strings;
+    const { openPositions } = selectors;
+    
     Page.open10CloudsHomePage();
     Page.goToOpenJobPositions();
-    Page.searchForJobPosition(strings.qaEngineer);
+    Page.searchForJobPosition(qaEngineer);
 
     // check if number od job positions displayed is equal 1
-    const numberOfJobPositionsDisplayed = $(selectors.openPositions).$$('a').length;
+    const numberOfJobPositionsDisplayed = $(openPositions).$$('a').length;
     expect(numberOfJobPositionsDisplayed).toEqual(1);
 
   });
