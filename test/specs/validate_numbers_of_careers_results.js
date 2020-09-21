@@ -8,7 +8,7 @@ describe('Opening Careers tab in 10Clouds page', () => {
   it('should validate that there is exactly 1 QA Automation Engineer role open', () => {
     const { qaEngineer } = strings;
     const { openPositions } = selectors;
-    
+
     Page.open10CloudsHomePage();
     Page.goToOpenJobPositions();
     Page.searchForJobPosition(qaEngineer);
@@ -19,5 +19,3 @@ describe('Opening Careers tab in 10Clouds page', () => {
 
   });
 });
-
-

@@ -3,8 +3,9 @@ const strings = require('../constants/strings.js');
 
 const { url } = strings;
 const { searchJobsInput, careersTab, seeOpenPositionsButton } = selectors;
-module.exports = {
 
+module.exports = {
+    
   /**
      * Opens 10Clouds homepage.
      *

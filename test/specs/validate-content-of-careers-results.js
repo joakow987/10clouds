@@ -20,5 +20,3 @@ describe('Opening Careers tab in 10Clouds page and typing Automation in search b
 
   });
 });
-
-
