@@ -1,0 +1,39 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Opening Careers tab in 10Clouds page",
+    "children" : [ {
+      "name" : "should validate that there is exactly 1 QA Automation Engineer role open",
+      "uid" : "374a3b36524e34ed",
+      "parentUid" : "ec14fcac180552774d26c147bf8e6321",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600671471026,
+        "stop" : 1600671478875,
+        "duration" : 7849
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "ec14fcac180552774d26c147bf8e6321"
+  }, {
+    "name" : "Opening Careers tab in 10Clouds page and typing Automation in search box",
+    "children" : [ {
+      "name" : "should validate that each job title contains Automation",
+      "uid" : "2eec951115ed975a",
+      "parentUid" : "ab3040d603a2260ac82bd34fccac884b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600671471082,
+        "stop" : 1600671479577,
+        "duration" : 8495
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "ab3040d603a2260ac82bd34fccac884b"
+  } ]
+}

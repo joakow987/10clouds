@@ -1,0 +1,32 @@
+{
+  "name": "clouds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio wdio.conf.js",
+    "eslint": "eslint --fix ./test --ext .js",
+
+    "test-suite": "wdio wdio.conf.js --suite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^6.5.2",
+    "eslint": "^7.9.0",
+    "webdriverio": "^6.5.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/register": "^7.7.0",
+    "@wdio/local-runner": "^6.5.2",
+    "@wdio/mocha-framework": "^6.5.0",
+    "@wdio/spec-reporter": "^6.4.7",
+    "@wdio/sync": "^6.5.0",
+    "chromedriver": "^85.0.1",
+    "wdio-chromedriver-service": "^6.0.4"
+  }
+}

@@ -1,0 +1,21 @@
+[ {
+  "uid" : "2eec951115ed975a",
+  "name" : "should validate that each job title contains Automation",
+  "time" : {
+    "start" : 1600671471082,
+    "stop" : 1600671479577,
+    "duration" : 8495
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "374a3b36524e34ed",
+  "name" : "should validate that there is exactly 1 QA Automation Engineer role open",
+  "time" : {
+    "start" : 1600671471026,
+    "stop" : 1600671478875,
+    "duration" : 7849
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

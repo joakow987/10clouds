@@ -1,0 +1,58 @@
+{
+  "uid" : "374a3b36524e34ed",
+  "name" : "should validate that there is exactly 1 QA Automation Engineer role open",
+  "fullName" : "Opening Careers tab in 10Clouds page.should validate that there is exactly 1 QA Automation Engineer role open",
+  "historyId" : "e60ccd5b1e9f2ed6f001df8aa84fbe6b",
+  "time" : {
+    "start" : 1600671471026,
+    "stop" : 1600671478875,
+    "duration" : 7849
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Opening Careers tab in 10Clouds page"
+  }, {
+    "name" : "testClass",
+    "value" : "Opening Careers tab in 10Clouds page"
+  }, {
+    "name" : "testMethod",
+    "value" : "should validate that there is exactly 1 QA Automation Engineer role open"
+  }, {
+    "name" : "package",
+    "value" : "Opening Careers tab in 10Clouds page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "374a3b36524e34ed.json",
+  "parameterValues" : [ "chrome" ]
+}
