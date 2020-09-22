@@ -5,7 +5,7 @@ const { url } = strings;
 module.exports = {
     
   /**
-     * Opens 10Clouds homepage.
+     * Opens 10Clouds homepage
      *
      */
   open10CloudsHomePage: function () {

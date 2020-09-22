@@ -1,3 +1,7 @@
+### Description
+
+The tests have been automated with WebdriverIO framework.
+
 ### Requirements
 
 Node.js
