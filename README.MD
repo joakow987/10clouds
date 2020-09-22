@@ -1,6 +1,6 @@
 ### Description
 
-The tests have been automated with WebdriverIO framework.
+The tests have been automated with WebdriverIO framework for Chrome.
 
 ### Requirements
 
