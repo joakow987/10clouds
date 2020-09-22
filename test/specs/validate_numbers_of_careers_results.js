@@ -1,7 +1,7 @@
 const strings = require('../constants/strings.js');
 const selectors = require('../constants/selectors.js');
-const Page = require('../pageObjects/Page.js');
-
+const HomePage = require('../pageObjects/HomePage.js');
+const CareersPage = require('../pageObjects/CareersPage.js');
 
 describe('Opening Careers tab in 10Clouds page', () => {
 
@@ -9,9 +9,9 @@ describe('Opening Careers tab in 10Clouds page', () => {
     const { qaEngineer } = strings;
     const { openPositions } = selectors;
 
-    Page.open10CloudsHomePage();
-    Page.goToOpenJobPositions();
-    Page.searchForJobPosition(qaEngineer);
+    HomePage.open10CloudsHomePage();
+    CareersPage.goToOpenJobPositions();
+    CareersPage.searchForJobPosition(qaEngineer);
 
     // check if number od job positions displayed is equal 1
     const numberOfJobPositionsDisplayed = $(openPositions).$$('a').length;

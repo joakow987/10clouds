@@ -1,6 +1,7 @@
 const strings = require('../constants/strings.js');
 const selectors = require('../constants/selectors.js');
-const Page = require('../pageObjects/Page.js');
+const HomePage = require('../pageObjects/HomePage.js');
+const CareersPage = require('../pageObjects/CareersPage.js');
 
 describe('Opening Careers tab in 10Clouds page and typing Automation in search box', () => {
 
@@ -8,9 +9,9 @@ describe('Opening Careers tab in 10Clouds page and typing Automation in search b
     const { automation } = strings;
     const { jobOfferTitle } = selectors;
 
-    Page.open10CloudsHomePage();
-    Page.goToOpenJobPositions();
-    Page.searchForJobPosition(automation);
+    HomePage.open10CloudsHomePage();
+    CareersPage.goToOpenJobPositions();
+    CareersPage.searchForJobPosition(automation);
 
     // check if each job displayed contains "Automation" in the title
     const arrayOfJobTitlesDisplayed = $$(jobOfferTitle);
