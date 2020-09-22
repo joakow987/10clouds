@@ -4,8 +4,8 @@ The tests have been automated with WebdriverIO framework for Chrome.
 
 ### Requirements
 
-Node.js
-Chrome browser
+- Node.js
+- Chrome browser
 
 ### Pre-requisites
 
